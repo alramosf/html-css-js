@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+    <style>
+        input#txtnasc{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conferindo nacionalidade</h1>
+    Nacionalidade: <input type="text" name="txtnasc" id="txtnasc" maxlength="12">
+    <input type="button" value="Verificar" id="send" onclick="checar()">
+    <div id="res"></div>
+
+<script>
+
+    function checar(){
+        var nasc = 'Brasil'
+        var nasc1 = 'Gringo'
+        res.innerHTML = `Você é Brasileiro`
+        if(nasc != 'Brasil'){
+            res.innerHTML = `Você é ${nas1}<p>gringo</p>`
+        }else {
+            res.innerHTML = `Você é ${nasc}`
+        }
+       
+    }
+document.addEventListener("keypress", function(e){
+
+if(e.key ==="Enter"){
+
+    const btn = document.querySelector("#send");
+    btn.click();
+}
+
+})
+</script>
+</body>
+</html>
