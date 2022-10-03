@@ -29,11 +29,12 @@
 <script>
 
     function checar(){
-        var nasc = 'Brasil'
-        var nasc1 = 'Gringo'
+        var nasc = document.getElementById('txtnasc')
+               
         res.innerHTML = `Você é Brasileiro`
-        if(nasc != 'Brasil'){
-            res.innerHTML = `Você é ${nas1}<p>gringo</p>`
+        
+        if(nasc != 'Brasileiro'){
+            res.innerHTML = `Você é ${nasn}<p>gringo</p>`
         }else {
             res.innerHTML = `Você é ${nasc}`
         }
