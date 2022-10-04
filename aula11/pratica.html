@@ -22,24 +22,18 @@
 </head>
 <body>
     <h1>Conferindo nacionalidade</h1>
-    Nacionalidade: <input type="text" name="txtnasc" id="txtnasc" maxlength="12">
+    Local: <input type="text" name="país" id="local" maxlength="12">
     <input type="button" value="Verificar" id="send" onclick="checar()">
     <div id="res"></div>
 
 <script>
-
-    function checar(){
-        var nasc = document.getElementById('txtnasc')
-               
-        res.innerHTML = `Você é Brasileiro`
-        
-        if(nasc != 'Brasileiro'){
-            res.innerHTML = `Você é ${nasn}<p>gringo</p>`
-        }else {
-            res.innerHTML = `Você é ${nasc}`
-        }
-       
-    }
+    var país = "EUA"
+    var local = document.getElementById('local')
+    var res = document.getElementById('res')
+       if (país == 'Brasil'){
+        res.innerHTML = ('Brasileiro')
+       }
+    
 document.addEventListener("keypress", function(e){
 
 if(e.key ==="Enter"){
