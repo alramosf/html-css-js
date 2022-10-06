@@ -22,18 +22,21 @@
 </head>
 <body>
     <h1>Conferindo nacionalidade</h1>
-    Local: <input type="text" name="país" id="local" maxlength="12">
-    <input type="button" value="Verificar" id="send" onclick="checar()">
-    <div id="res"></div>
+    Local: <input type="text" name="país" id="local" maxlength="12" required >
+    <input type="button" value="Verificar" id="send" onclick="checar()" required>
+    <div id="res"></div required>
 
 <script>
-    var país = "EUA"
-    var local = document.getElementById('local')
+    var país = "Brasil"
+    function checar(){
+    var local = document.getElementById('local').value
     var res = document.getElementById('res')
-       if (país == 'local'){
+       if (país === local){
+        res.innerHTML = ('Brasileiro!')
+       }else{
         res.innerHTML = ('Você é gringo!')
        }
-
+    }
 document.addEventListener("keypress", function(e){
 
 if(e.key ==="Enter"){
