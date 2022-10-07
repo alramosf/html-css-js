@@ -6,5 +6,5 @@ if (time < 12){
 } else if (time <= 18) {
     console.log('Boa tarde!')
 } else {
-    console.log('Boa noite!')
+     console.log('Boa noite!')
 }
