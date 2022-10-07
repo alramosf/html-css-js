@@ -1,4 +1,5 @@
-var time = 19
+var now = new Date()
+var time = now.getHours()
 console.log(`Agora são exatamente ${time} horas.`)
 if (time < 12){
     console.log('Bom dia!')
