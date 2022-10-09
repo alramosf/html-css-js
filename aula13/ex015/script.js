@@ -50,4 +50,10 @@ function verificar(){
 
 
 
+
+}
+if(e.key ==="Enter"){
+
+    const btn = document.querySelector("#res");
+    btn.click();
 }
