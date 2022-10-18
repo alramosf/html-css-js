@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*Estilos para impressoras*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+
+}
+
+
+menu {
+    display: none; /*retira o menu*/
+}
+
+article::after{
+    content: 'Esse artigo foi impresso atréves do site www.talsite.com';
+}
+
+article{
+    width: 100%;
+}
