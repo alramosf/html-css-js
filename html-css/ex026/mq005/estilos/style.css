@@ -21,8 +21,24 @@ header{
     text-align: center;
  }
 
+ span#burguer{
+   background-color: rgb(58, 58, 58);
+   width: 100vw;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 8px;
+   cursor: pointer;
+ }
+
+ span#burguer:hover{
+   background-color: white;
+   color: black;
+ }
+
  menu{
-    display: block;
+    display: none;
+    
  }
 
  menu > ul{
