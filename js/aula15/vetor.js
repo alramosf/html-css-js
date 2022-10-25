@@ -9,3 +9,5 @@ for (let pos=0; pos < valores.length; pos++){
 }
 */
 //console.log(valores[2])
+
+//for let pos in se le "para cada posição em na variavel compostal eu vou mostra o variavel[pos]~"
