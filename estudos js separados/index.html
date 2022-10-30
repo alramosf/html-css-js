@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body{
+            background-color: rgb(48, 48, 48);
+            color: black;
+            margin: auto;
+            
+        }
+        main{
+            background-color: white;
+
+            width: 400px;
+            margin: 20px;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Voltando ao basico do basico</h1>
+        <p  ><label for="boxname">Qual seu nome?</label>
+            <input type="text" name="boxname" id="boxname">
+            <input type="button" value="Enviar" id="send" onclick="escreva()">
+            <div id="res"></div>
+        </p>
+    </main>
+    
+    
+
+    <script>
+        function escreva(){
+            let name = document.getElementById('boxname').value
+            let res = document.getElementById('res')
+            res.innerHTML = (`O seu nome é ${name}`)
+        }
+        
+        
+    </script>
+</body>
+</html>
