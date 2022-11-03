@@ -8,33 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Calculadora de Gorjetas</h1>
-        <form action="" method="post">
-            <p>Quanto ficou a conta?</p>
-            <label for="billvalue">R$:</label>
-            <input type="number" name="billvalue" id="billvalue" placeholder="R$20,00">
-
-            <p>Como foi seu serviço?</p>
-            <select name="serviceQuality" id="serviceQuality">
-                <option disabled selected value="0">-- Escolha uma opção</option>
-                <option value="0.3">30% - Incrível</option>
-                <option value="0.2">20% - Bom</option>
-                <option value="0.15">15% - Aceitável</option>
-                <option value="0.1">10% - Ruim</option>
-                <option value="0.05">05% - Péssimo</option>
-
-            </select>
-            <p>Quantas pessoas vão dividir a conta?</p>
-            <label for="pNumber">Pessoa(s)</label>
-            <input type="number" name="pNumber" id="pNumber" placeholder="1">
-            <p>
-                <input type="submit" value="Calcular">
-            </p>
-
-            
-        </form>
-    </main>
+    <section>
+        <main>
+            <h1>Calculadora de Gorjetas</h1>
+            <form action="" method="post">
+                <p>Quanto ficou a conta?</p>
+                <label for="billvalue">R$:</label>
+                <input type="number" name="billValue" id="billValue" placeholder="R$20,00">
+                <p>Como foi seu serviço?</p>
+                <select name="serviceQuality" id="serviceQuality">
+                    <option disabled selected value="0">-- Escolha uma opção</option>
+                    <option value="0.3">30% - Incrível</option>
+                    <option value="0.2">20% - Bom</option>
+                    <option value="0.15">15% - Aceitável</option>
+                    <option value="0.1">10% - Ruim</option>
+                    <option value="0.05">05% - Péssimo</option>
+                </select>
+                <p>Quantas pessoas vão dividir a conta?</p>
+                <label for="pNumber">Pessoa(s)</label>
+                <input type="number" name="pNumber" id="pNumber" placeholder="1">
+                <p class="but">
+                    <input type="submit" value="Calcular" class="button" onclick="()">
+                </p>
+        
+            </form>
+        </main>
+    </section>
 <script src="script.js"></script>
 </body>
 </html>
